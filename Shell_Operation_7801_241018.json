@@ -1,0 +1,69 @@
+[
+    {
+        "type": "check",
+        "desc": "ROV Dive 50m Away from pipe",
+        "var": false,
+        "info": "Move vessel 50m away from pipe for ROV dive.\n\nIf only background comp vessel can stay.\n\nRov move 30m from pipe and 20m from Vessel."
+    },
+    {
+        "type": "check",
+        "desc": "Equipment Check",
+        "var": false,
+        "info": "Check whatever needs to be on pre-dive is on.\nSpint \nC-node\nMini IPS\nApos etc"
+    },
+    {
+        "type": "check",
+        "desc": "SVP prepare",
+        "var": false,
+        "info": "Restart driver when off deck. Check settings\nPressure 1.02\nCheck if ROV or WInch is set"
+    },
+    {
+        "type": "check",
+        "desc": "ROV in water ( Apos/MUX/SPRINT)",
+        "var": false,
+        "info": "Check and Power on everything\nSVX2\nMINISVS\nCP\nLaser\nTSS power\nTSS serial\nORCA cameras\nBoth R2Sonic"
+    },
+    {
+        "type": "check",
+        "desc": "TSS system parameters (cable width etc)",
+        "var": false,
+        "info": "Check system parameters is correct with Cable excel"
+    },
+    {
+        "type": "timer",
+        "desc": "BGComp 3h or new cable",
+        "var": false,
+        "info": "Background comp every 3 max 4 hours\n\nEvery cable change\n\nOr if good opportunity while downtime like loss of autotrack",
+        "initial_time": 10800
+    },
+    {
+        "type": "check",
+        "desc": "Qinsy Grid",
+        "var": false,
+        "info": "Check qinsy grid is correct with correct filename"
+    },
+    {
+        "type": "check",
+        "desc": "KP Reference set",
+        "var": false,
+        "info": "Check in session setup -> additional mainlines\nSelect correct KP ref as the line being run"
+    },
+    {
+        "type": "check",
+        "desc": "SubC folder set",
+        "var": false,
+        "info": "Check folder setup for SubC.\nRecord local in I drive.\nTransfer to Fleet when logged off.. only what has not already been transferred.\n\nSort by name is easiest.\nEach line has its own folder so check its correct."
+    },
+    {
+        "type": "check",
+        "desc": "Autolog setup( op. zone dive etc.)",
+        "var": false,
+        "info": "Check operators is correct.\nNo hidden error message.\nLog is working properly.\nCorrect Dive number and area etc."
+    },
+    {
+        "type": "check",
+        "desc": "Ready!?",
+        "var": false,
+        "info": "Final quick glance and check with collague all is ready?"
+    }
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "type": "check",
+        "desc": "Do this",
+        "var": true,
+        "info": ""
+    },
+    {
+        "type": "timer",
+        "desc": "Timer Task",
+        "var": true,
+        "info": "",
+        "initial_time": 60
+    }
+]
