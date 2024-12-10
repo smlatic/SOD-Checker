@@ -1,6 +1,12 @@
 [
     {
         "type": "check",
+        "desc": "Session Setup, Geodetics check",
+        "var": false,
+        "info": "Double check we have our lines we are working with.\nCheck coordinate system"
+    },
+    {
+        "type": "check",
         "desc": "ROV Dive 50m Away from pipe",
         "var": false,
         "info": "Move vessel 50m away from pipe for ROV dive.\n\nIf only background comp vessel can stay.\n\nRov move 30m from pipe and 20m from Vessel."
@@ -31,10 +37,17 @@
     },
     {
         "type": "timer",
-        "desc": "BGComp 3h or new cable",
+        "desc": "BGComp 3h",
         "var": false,
-        "info": "Background comp every 3 max 4 hours\n\nEvery cable change\n\nOr if good opportunity while downtime like loss of autotrack",
+        "info": "Background comp every 3 max 4 hours\nor good opportunity because some stop.\nOr we change cables, also check system parameters.\nSaves screenshot of result.\n\nVessel slow stop \nROV moves 30m offside from cable.",
         "initial_time": 10800
+    },
+    {
+        "type": "timer",
+        "desc": "SVP 12h",
+        "var": false,
+        "info": "SVP every 12 hours or if other good opportunity presents itself.",
+        "initial_time": 43200
     },
     {
         "type": "check",
@@ -50,7 +63,7 @@
     },
     {
         "type": "check",
-        "desc": "SubC folder set",
+        "desc": "SubC folder set (DVR)",
         "var": false,
         "info": "Check folder setup for SubC.\nRecord local in I drive.\nTransfer to Fleet when logged off.. only what has not already been transferred.\n\nSort by name is easiest.\nEach line has its own folder so check its correct."
     },
@@ -64,6 +77,12 @@
         "type": "check",
         "desc": "Ready!?",
         "var": false,
-        "info": "Final quick glance and check with collague all is ready?"
+        "info": "Final quick glance over everything and check with senior or colleague all is ready?"
+    },
+    {
+        "type": "check",
+        "desc": "Log on Camera, NAviscan, Qinsy",
+        "var": false,
+        "info": "Log off camera when not operating in the \nSUbC inspector.\n\nKeep Naviscan logging during small stops, just use filesplit and make note in log.\n\nAlso make note for DVR log on/off (Cameras)"
     }
 ]

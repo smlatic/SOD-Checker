@@ -1,0 +1,14 @@
+[
+    {
+        "type": "check",
+        "desc": "Do this",
+        "var": false,
+        "info": ""
+    },
+    {
+        "type": "check",
+        "desc": "SVP",
+        "var": false,
+        "info": ""
+    }
+]
